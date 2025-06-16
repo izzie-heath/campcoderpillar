@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camp Coderpillar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="landing.css">
 </head>
 <body>
-    
+    <nav>
+        <div class="logo">
+            <img src="images/coral-logo.png" alt="Camp Coderpillar Logo" id="logo-image">
+        </div>
+        <button class="nav-toggle" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a href="#FAQ">FAQ</a>
+            <a href="#camps">camps</a>
+            <a href="#about-me">about me</a>
+            <a href="#sign-up">sign up</a>
+        </div>
+    </nav>
+<div class="top-text">
+    <h1 id="big-tagline">from curious caterpillars</h1>
+    <h1 id="big-tagline">to confident coders</h1>
+    <div id="top-small-text">
+        <p id="top-desc" style="margin-top: 40px;">Camp Coderpillar is a weekly summer camp </p>
+        <p id="top-desc">that combines beginner coding, hands-on </p>
+        <p id="top-desc">science, and other creative activities!</p>
+        <ul>
+            <li>Just $125 for a week!</li>
+            <li>3 hour sessions, 4 days a week</li>
+            <li>Up to 8 kids per session</li>
+        </ul>
+    </div>
+    <div class="cta-stack">
+        <a href="https://forms.gle/kupf9RBL3AxX6khC8" target="_blank" id="register" style="margin-left: 7vw;">register now</a>
+        <img src="images/coderpillar1.png" alt="Coderpillar Mascot" id="coderpillar1">
+    </div>
+</div>
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+    <div class="about">
+        <img src="/images/izzie.png" alt="Me" id="izzie">
+        <div class="about-text">
+            <h1>about</h1>
+            <p id="about-desc">Camp Coderpillar was created by 19-year-old Izzie Heath, an experienced coding instructor and former summer camp lead. Based in Coles Crossing, the camp is designed for kids ages 7–12 to explore coding and other STEM activities in a supportive, beginner-friendly environment.</p>
+        </div>
+    </div>
 </body>
 </html>

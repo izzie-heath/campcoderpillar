@@ -1,0 +1,96 @@
+body {
+    background-color: #FFFFF3;
+    margin: 0;
+    font-family: 'Visby Medium', sans-serif;
+    color: #12263A;
+}
+
+a {
+    text-decoration: none;
+    color: #12263A;
+}
+
+nav {
+    background-color: #CDE4F1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 2vw;
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+.nav-links {
+    font-family: 'Nexa Heavy', sans-serif;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 4vw;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+#logo-image {
+    height: 10vw;
+    max-height: 60px;
+    width: auto;
+}
+
+@font-face {
+    font-family: 'Nexa Heavy';
+    src: url('fonts/Nexa-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Visby Medium';
+    src: url('fonts/VisbyMedium.otf') format('opentype');
+}
+
+
+/* Hamburger button styles */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+.nav-toggle span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #12263A;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Responsive styles */
+@media (max-width: 700px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 2vw;
+        background: #CDE4F1;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        z-index: 10;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-toggle {
+        display: flex;
+    }
+    nav {
+        position: relative;
+    }
+}

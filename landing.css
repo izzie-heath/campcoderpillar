@@ -1,0 +1,179 @@
+h1 {
+  font-family: 'Nexa Heavy', sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem); /* updated */
+  line-height: .5;
+  
+}
+
+.top-text{
+    margin-top: 6vw;
+    margin-bottom: 70px;
+}
+
+.about{
+    background-color: #F6FDBA;
+    margin-top: -35px;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-text{
+    margin-left: 4vw;
+    font-size: clamp(1rem, 2vw, 1.6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#big-tagline{
+    margin-left: 7vw;
+}
+
+#top-desc{
+    line-height: .5;
+}
+
+
+#top-small-text {
+  margin-left: 7vw;
+  font-size: clamp(1rem, 2vw, 1.6rem); /* updated */
+}
+
+#register {
+  font-size: clamp(1rem, 2vw, 1.5rem); 
+  padding: 1vw 1.4vw;
+  background-color: #FCC085;
+  border-radius: 7px;
+  font-family: 'Nexa Heavy', sans-serif;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  order: 1;
+}
+
+#coderpillar1 {
+    position: sticky;
+    margin-left: 60vw;   /* Move right a little */
+    margin-top: -32vw;   /* Move up a little */
+    width: 35vw;
+    z-index: -1;
+    order: 2;
+}
+
+.cta-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+#izzie{
+    width: 35vw;
+    
+    max-width: 450px;
+    margin-left: 6vw;
+}
+
+
+#about-desc{
+    margin-right: 10vw;
+    margin-top: -10px;
+}
+
+@media (max-width: 700px) {
+    .cta-stack {
+    align-items: center;
+  }
+  #coderpillar1 {
+    order: 1;
+    margin-bottom: 1em;
+  }
+
+  .top-text {
+    margin-top: 8vw;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 4vw;
+  }
+
+  h1 {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
+    line-height: .01;
+  }
+
+  #top-small-text {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 18px;
+    padding: 0;
+  }
+
+  #top-desc {
+    margin-top: 20px !important;
+    line-height: .2;
+  }
+
+  ul {
+    margin-left: 0;
+    padding-left: 1.2em;
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 2em;
+  }
+
+  #register {
+    order: 2;
+    margin-left: 0 !important;
+    display: block;
+    margin: 2em auto 2em auto;
+    font-size: clamp(1.1rem, 5vw, 1.3rem);
+    padding: 1em 2em;
+    min-width: 60vw;
+    border-radius: 2em;
+    text-align: center;
+    margin-top: 50px; /* Reset for mobile */
+  }
+
+  #coderpillar1 {
+    position: static;
+    margin: -40px;
+    width: 60vw;
+    max-width: 260px;
+    display: block;
+    z-index: 0;
+  }
+
+  #big-tagline {
+    margin-left: 0;
+  }
+
+  .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  #about-desc{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15px;
+  }
+
+  #izzie{
+    width: 54vw;
+  }
+
+  .about-text{
+    margin-left: 0vw;
+    font-size: 18px;
+    margin-left: 54px;
+    margin-right: 54px;
+}
+}
