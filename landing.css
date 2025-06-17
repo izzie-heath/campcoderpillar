@@ -25,11 +25,12 @@ h1 {
     justify-content: center;
 }
 
-#big-tagline{
+.big-tagline{
     margin-left: 7vw;
+  
 }
 
-#top-desc{
+.top-desc{
     line-height: .5;
 }
 
@@ -49,6 +50,7 @@ h1 {
   z-index: 1;
   display: inline-block;
   order: 1;
+
 }
 
 #register:hover {
@@ -133,6 +135,11 @@ h1 {
   padding: 1.5rem;
   border-radius: 16px;
   box-shadow: 6px 6px rgba(0,0,0,0.05);
+  margin: 0;
+  color: #12263A;
+  font-size: 1.1rem;
+
+  line-height: 1.5;
 }
 
 .camp-header {
@@ -160,11 +167,12 @@ h1 {
   white-space: nowrap;
 }
 
-.camp-card p {
-  margin: 0;
-  color: #12263A;
-  font-size: 1rem;
-  line-height: 1.5;
+.camp-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 340px;
 }
 
 .camp-image img {
@@ -173,17 +181,31 @@ h1 {
   height: auto;
 }
 
-
 @media (max-width: 700px) {
-    .cta-stack {
+
+
+  
+  .cta-stack {
     align-items: center;
   }
-  #coderpillar1 {
+  #register {
+    display: block;
+    margin: 2em auto 2em auto;
+    text-align: center;
     order: 1;
-    margin-bottom: 1em;
   }
+  #coderpillar1 {
+    display: block;
+    margin: 0 auto 1em auto;
+    position: static;
+    width: 60vw;
+    max-width: 260px;
+    z-index: 0;
+    order: 1;
+  }  
+  
 
-  #big-tagline {
+  .big-tagline {
     display: block;           /* Remove flex */
     justify-content: unset;   /* Remove flex alignment */
     text-align: left;         /* Ensure left alignment */
@@ -218,7 +240,7 @@ h1 {
     padding: 0;
   }
 
-  #top-desc {
+  .top-desc {
     margin-top: 20px !important;
     line-height: .2;
   }
@@ -251,9 +273,11 @@ h1 {
     max-width: 260px;
     display: block;
     z-index: 0;
+    display: flex;
+    justify-content: center;
   }
 
-  #big-tagline {
+  .big-tagline {
     margin-left: 0;
   }
 
@@ -295,15 +319,22 @@ h1 {
     .camp-container {
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
   }
 
   .camp-list {
+    order: 1;
     width: 100%;
+    gap: 1.2rem;
   }
 
   .camp-image {
     margin-top: 2rem;
     text-align: center;
+    order: 0;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    align-items: center;
   }
 
   .camp-image img {
@@ -327,5 +358,88 @@ h1 {
 
   .camp-date {
     font-size: 0.85rem;
+  }
+
+  
+}
+
+
+
+
+
+/* Hide mobile button by default, show desktop button */
+#register-mobile { display: none; }
+#register-desktop { display: block; }
+
+
+/* --- Shared Button Styles --- */
+.register-btn {
+  font-size: clamp(1rem, 2vw, 1.5rem); 
+  padding: 1vw 1.4vw;
+  background-color: #FCC085;
+  border-radius: 7px;
+  font-family: 'Nexa Heavy', sans-serif;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  order: 1;
+  margin-top: 3vw;
+}
+
+.register-btn:hover {
+  background-color: #f3a455;
+  cursor: pointer;
+}
+
+
+@media (max-width: 700px) {
+  #register-mobile {
+    order: 2;
+    margin: 2em auto 0 auto;
+    font-size: 1.3rem;
+    padding: 1em 2em;
+    min-width: 60vw;
+    max-width: 340px;
+    border-radius: 2em;
+    text-align: center;
+    background-color: #FCC085;
+    font-family: 'Nexa Heavy', sans-serif;
+    color: #12263A;
+    border: none;
+    transition: background 0.2s;
+    display: block;
+  }
+  
+  #register-mobile:hover {
+    background-color: #f3a455; 
+    cursor: pointer;
+  }
+
+  #register-desktop {
+    display: none;
+  }
+}
+
+
+/* Sqished text on mobile fix */
+@media (max-width: 406px){
+  .big-tagline {
+    font-size: 1.5rem; /* Adjusted for smaller screens */
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .top-desc {
+    font-size: .8rem; /* Adjusted for smaller screens */
+  }
+
+  li {
+    font-size: .8rem; /* Adjusted for smaller screens */
+  }
+}
+
+@media(max-width: 325px){
+  .big-tagline{
+    font-size: 1.2rem; /* Further adjusted for very small screens */
   }
 }
