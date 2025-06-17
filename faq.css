@@ -1,0 +1,49 @@
+body{
+    background-color: #FFF7E6;
+}
+
+h1{
+  font-family: 'Nexa Heavy', sans-serif;
+  font-size: 5vw; /* updated */
+  line-height: .6;
+  margin-left: 10vw;
+}
+
+#faq{
+    margin-left: 10vw;
+    margin-right: 20vw;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+hr{
+    height: px;
+    background-color: #12263A; /* Dark blue color */
+}
+
+details{
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+details {
+  background-color: #FFECC2;
+  background-color: #FFC085;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+summary {
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+details[open] {
+  background-color: #FFC085;
+  background-color: #FFECC2;
+}

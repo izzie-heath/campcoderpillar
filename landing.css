@@ -51,6 +51,11 @@ h1 {
   order: 1;
 }
 
+#register:hover {
+  background-color: #f3a455; /* Darker orange on hover */
+  cursor: pointer;
+}   
+
 #coderpillar1 {
     position: sticky;
     margin-left: 60vw;   /* Move right a little */
@@ -69,7 +74,6 @@ h1 {
 
 #izzie{
     width: 35vw;
-    
     max-width: 450px;
     margin-left: 6vw;
 }
@@ -80,6 +84,96 @@ h1 {
     margin-top: -10px;
 }
 
+#about-me-button{
+    font-size: clamp(1rem, 2vw, 1.5rem); 
+    padding: 1vw 1.4vw;
+    background-color: #FCC085;
+    border-radius: 7px;
+    font-family: 'Nexa Heavy', sans-serif;
+    display: inline-block;
+    width: auto;           /* Ensure width fits content */
+    min-width: 0;          /* Prevents unwanted minimum width */
+    max-width: max-content;/* Optional: shrink to fit text */
+}
+
+#about-me-button:hover {
+  background-color: #f3a455; /* Darker orange on hover */
+    cursor: pointer;
+}
+
+.upcoming-camps {
+  padding: 1rem 5vw;
+  background-color: #fefdf6;
+}
+
+.upcoming-camps h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #12263A;
+  text-transform: lowercase;
+}
+
+.camp-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.camp-list {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.camp-card {
+  background-color: #CDE4F1;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 6px 6px rgba(0,0,0,0.05);
+}
+
+.camp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.camp-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  color: #12263A;
+}
+
+.camp-date {
+  background-color: #CBF141;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #12263A;
+  white-space: nowrap;
+}
+
+.camp-card p {
+  margin: 0;
+  color: #12263A;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.camp-image img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+}
+
+
 @media (max-width: 700px) {
     .cta-stack {
     align-items: center;
@@ -89,14 +183,24 @@ h1 {
     margin-bottom: 1em;
   }
 
+  #big-tagline {
+    display: block;           /* Remove flex */
+    justify-content: unset;   /* Remove flex alignment */
+    text-align: left;         /* Ensure left alignment */
+    margin-left: 0;
+  }
+
   .top-text {
     margin-top: 8vw;
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
+    align-items: left;
+    text-align: left;
     align-items: center;
-    text-align: center;
     padding: 0 4vw;
+    align-items: flex-start !important;
+    text-align: left !important;
   }
 
   h1 {
@@ -110,6 +214,7 @@ h1 {
     margin-left: 0;
     margin-right: 0;
     font-size: 18px;
+    text-align: left;
     padding: 0;
   }
 
@@ -175,5 +280,52 @@ h1 {
     font-size: 18px;
     margin-left: 54px;
     margin-right: 54px;
-}
+  }
+    #about-me-button{
+    margin-left: 0 !important;
+    display: block;
+    margin: 2em auto 2em auto;
+    font-size: clamp(1.1rem, 5vw, 1.3rem);
+    padding: 1em 2em;
+    min-width: 60vw;
+    border-radius: 2em;
+    text-align: center;
+    margin-top: 10px; /* Reset for mobile */
+  }
+    .camp-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .camp-list {
+    width: 100%;
+  }
+
+  .camp-image {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .camp-image img {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .camp-card {
+    padding: 1.2rem;
+  }
+
+  .camp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .camp-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .camp-date {
+    font-size: 0.85rem;
+  }
 }
