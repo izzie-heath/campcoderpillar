@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Coderpillar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aboutme.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/coral-logo.png" alt="Camp Coderpillar Logo" id="logo-image">
+            </a>
+        </div>
+        <button class="nav-toggle" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a href="faq.html" class="nav-link">FAQ</a>
+            <a href="index.html#upcoming-camps" class="nav-link">camps</a>
+            <a href="aboutme.html" class="nav-link">about me</a>
+            <a href="https://forms.gle/kupf9RBL3AxX6khC8" class="nav-link" target="_blank">sign up</a>
+        </div>
+    </nav>
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+
+<section class="about-me">
+  <div class="about-section" id="top-section">
+    <h1 class="so-who-am-i">so, who am i?</h1>
+    <div class="who-am-i">
+        <p id="who-am-i-text">Hi friend! Allow me to introduce myself! My name is Isabelle (Izzie). I am a sophomore at Brigham Young University, majoring in Computer Science. When I arrived back home to Cypress for the summer, I dreamed of doing something that would combine my experience in computer programming, my enthusiasm for educating curious, young minds, and my love for all things STEM. Thus, Camp Coderpillar was…hatched. Here is a little bit about my background:</p>
+        <img src="images/real-izzie.jpg" alt="Izzie Heath Photo" class="real-izzie-image">
+    </div>
+  </div>
+
+  <div class="about-section" style="background-color: #CDE4F1;">
+    <h2>my education</h2>
+    <ul>
+      <li>I attended Spillane Middle School and Cypress Woods High School</li>
+      <li>I was a straight A student throughout my entire academic career</li>
+      <li>I graduated Summa Cum Laude from Cypress Woods in the top 3% of my class</li>
+      <li>I have taken four years of Computer Science classes including CS I, CS II, CS III, and Data Structures and Algorithms.</li>
+      <li>I know the following programming languages: Java, Python, C++, HTML, CSS, and JavaScript</li>
+    </ul>
+  </div>
+
+  <div class="about-section" >
+    <h2>my experience</h2>
+    <ul>
+      <li>In high school I was a member of:</li>
+      <ul>
+        <li>National Honor Society</li>
+        <li>Spanish National Honor Society</li>
+        <li>Mu Alpha Theta - National Math Honor Society</li>
+        <li>Tri-M - National Music Honor Society (I was also a co-founder of the Cy Woods chapter)</li>
+      </ul>
+      <li>I play cello and was a member of both the Spillane and Cy Woods orchestras for seven years. By my senior year, I was one of five cello players in the highest ranked Chamber Orchestra</li>
+      <li>State-ranked cello ensemble member</li>
+      <li>During high school, I worked at iCode teaching after school classes and summer camps. I specialized in teaching web development but also led classes on 3D game development, robotics, entrepreneurship, art, 3D printing, engineering, Scratch, and more.</li>
+      <li>For three consecutive summers, I was a youth leader for a girl’s summer camp</li>
+      <li>At Brigham Young University, I currently work as a research assistant for the Computer Science department</li>
+      <li>Through my employment at BYU, I am a member of a team of four students who developed and launched a family history website at Roots Tech (an international family history convention held in Salt Lake City, UT). That website now has thousands of users and can be seen here: <a href="https://virtual-pedigree.fhtl.org/" target="_blank" id="vp-link">Virtual Pedigree</a></li>
+    </ul>
+  </div>
+
+  <div class="about-section" style="background-color: #CDE4F1;">
+    <h2>fun facts</h2>
+    <ul>
+      <li>When I’m not coding, my hobbies include doing all kinds of crafts, collecting vintage vinyl records, playing video games, doing calligraphy, shopping for new clothes, and playing my instruments (cello, piano, guitar, and ukulele)!</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-about">
+      <h4>About Camp Coderpillar</h4>
+      <p>Website and company created and led by Izzie Heath, a BYU Computer Science student passionate about helping kids fall in love with STEM.</p>
+      <p>Artwork by the wonderfully talented Anna Schroder.</p>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>📍 Coles Crossing, Cypress, TX<br>(Exact address shared after registration)</p>
+      <p>📧 <a href="mailto:izziecheath@gmail.com">izziecheath@gmail.com</a></p>
+      <p>📞 <a href="tel:+2813232295">+1 (281) 323-2295 (Text)</a></p>
+    </div>
+
+    <div class="footer-links">
+      <div class="quick-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="https://forms.gle/kupf9RBL3AxX6khC8" target="_blank">Register</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/aboutme.html">About Me</a></li>
+          <li><a href="/index.html#upcoming-camps">Upcoming Camps</a></li>
+        </ul>
+      </div>
+      <div class="footer-coderpillar">
+          <img src="images/coderpillar1withtext.png" alt="Coderpillar Mascot" style="width: 100px; height: auto; margin-left: 40px; margin-top: 30px;">
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>🐛 Thanks for visiting — see you this summer!</p>
+  </div>
+</footer>
+
+</body>
+</html>

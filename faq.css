@@ -4,15 +4,31 @@ body{
 
 h1{
   font-family: 'Nexa Heavy', sans-serif;
-  font-size: 5vw; /* updated */
-  line-height: .6;
-  margin-left: 10vw;
+  font-size: clamp(1.5rem, 4vw, 2.7rem); 
 }
 
 #faq{
-    margin-left: 10vw;
-    margin-right: 20vw;
+    width: 75vw;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.faq-header{
+  width: 75vw;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;;
+}
+
+#coderpillar-thinking{
+    width: 20vw;
+    max-width: 500px;
 }
 
 hr{
@@ -21,7 +37,6 @@ hr{
 }
 
 details{
-    
     margin-top: 15px;
     margin-bottom: 15px;
     padding-top: 15px;
@@ -46,4 +61,27 @@ summary {
 details[open] {
   background-color: #FFC085;
   background-color: #FFECC2;
+}
+
+@media (max-width: 700px){
+  h1{
+    font-size: 6vw; /* updated for smaller screens */
+    line-height: 1;
+  }
+
+  #faq{
+    width:85vw
+  }
+
+  .faq-header{
+    width: 85vw;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #coderpillar-thinking{
+    width: 50vw;
+    max-width: 100%;
+  }
 }
