@@ -157,7 +157,6 @@ h1 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 700;
-  text-transform: lowercase;
   color: #12263A;
 }
 
@@ -425,7 +424,7 @@ h1 {
 }
 
 
-/* Sqished text on mobile fix */
+/* Squished text on mobile fix */
 @media (max-width: 406px){
   .big-tagline {
     font-size: 1.5rem; /* Adjusted for smaller screens */
